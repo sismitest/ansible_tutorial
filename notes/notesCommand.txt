@@ -12,3 +12,6 @@ git status
 git commit -m "message"
 git push origin main
 
+** install package with sudo, it will ask for your password
+
+ansible all -m apt -a name=tmux --become --ask-become-pass

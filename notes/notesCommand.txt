@@ -1,0 +1,14 @@
+git clone {the ssh portion of it}
+
+git config --global user.name "sismi Ruiz"
+git congif --glboal user.email "sismi.a.ruiz@email.com"
+
+cat ~/.gitconfig
+
+git status
+git diff {FILENAME }
+git add {FILENAME OR -ALL}
+git status
+git commit -m "message"
+git push origin main
+

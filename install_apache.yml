@@ -5,14 +5,23 @@
   tasks:
 
   - name: upate system and install the apache2 and php package
-#    apt:
+    apt:
 # this uses what ever the the os runs for the instal package
-    package:
+#    package:
       name: 
-#        - apache2
- #       - libapache2-mod-php
-        - "{{ apache_package }}"
-        - "{{ php_package }}"
+        - apache2
+        - libapache2-mod-php
+#        - "{{ apache_package }}"
+#        - "{{ php_package }}"
       state: latest
       update_cache: yes
     when: ansible_distribution == "Ubuntu"     
+
+ - name: install apache and php for centos servers
+   dnf: 
+     name:
+       - httpd
+       - php
+     state: latest
+     update_cache: yes
+   when: ansible_distribution == "CentOS"

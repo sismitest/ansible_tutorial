@@ -15,3 +15,10 @@ git push origin main
 ** install package with sudo, it will ask for your password
 
 ansible all -m apt -a name=tmux --become --ask-become-pass
+
+
+** once you add tags you can run the playbook with the tags only command to see the tags are 
+
+ansible-playbook --list-tags site.yml
+ansible-plabook --tags centos --ask-become-pass site.yml
+ansible-playbook --tags "apache,db" --ask-become-pass stie.yml

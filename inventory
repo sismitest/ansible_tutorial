@@ -1,12 +1,12 @@
 [web_servers]
-192.168.1.2 ansible_ssh_user=server1
-192.168.1.8 ansible_ssh_user=root
+192.168.1.2 # ansible_ssh_user=server1
+192.168.1.8 # ansible_ssh_user=root
 
 [db_servers]
-192.168.1.4 ansible_ssh_user=ubuntu-server2
+192.168.1.4 # ansible_ssh_user=ubuntu-server2
 
 [file_servers]
-192.168.1.5 ansible_ssh_user=ubuntu-server3
+192.168.1.5 # ansible_ssh_user=ubuntu-server3
 
 [workstations]
-192.168.1.3 ansible_ssh_user=main-server
+192.168.1.3 # ansible_ssh_user=main-server

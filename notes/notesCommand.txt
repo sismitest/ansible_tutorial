@@ -22,3 +22,7 @@ ansible all -m apt -a name=tmux --become --ask-become-pass
 ansible-playbook --list-tags site.yml
 ansible-plabook --tags centos --ask-become-pass site.yml
 ansible-playbook --tags "apache,db" --ask-become-pass stie.yml
+
+
+** SSH copy command
+ssh-copy-id -i ~/.ssh/id_ed25519.pub {users}@{ip addres}

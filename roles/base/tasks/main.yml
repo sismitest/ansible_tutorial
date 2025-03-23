@@ -13,3 +13,12 @@
     group: root
     mode: 0644
   notify: restart_sshd
+
+- name: Disable Wayland for linux server
+  tags: rustdesk
+  replace:
+    path: /etc/gdm3/custom.conf
+   # regexp: '\#WaylandEnable=false'
+   # replace: "WaylandEnable=false"
+    regexp: '^#W'
+    replace: "W"

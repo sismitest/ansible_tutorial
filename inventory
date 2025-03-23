@@ -1,6 +1,6 @@
 [web_servers]
 192.168.1.2 # ansible_ssh_user=server1
-192.168.1.8 # ansible_ssh_user=root
+192.168.1.10  ansible_ssh_user=puppet-master
 
 [db_servers]
 192.168.1.4 # ansible_ssh_user=ubuntu-server2
